@@ -1,9 +1,11 @@
+# 2486. Append Characters to String to Make Subsequence
+
 # Explanation:
 # We use the two pointer technique, where pointer i is pointing at the string s, and pointer j is pointing at the string t
 # We just need to find the sequence of characters of t in s
 # To do that we put the pointers at the start of the each string, we loop through the string s, and move the pointer j once we encounter the corresponding character
 # Every time we encounter the corresponding character we increase the number of consecutive characters
-# In the end we subtract the length of the second string that we need to find with that number
+# In the end we subtract the length of the second string with the number of consecutive characters
 
 class Solution:
     # Time: O(n), Memory: O(1)
